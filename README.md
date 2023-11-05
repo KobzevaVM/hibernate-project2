@@ -1,6 +1,6 @@
 # hibernate-project2
 
-Запустить MySQL сервер как докер-контейнер.
+Запустить MySQL сервер как докер-контейнер.<br>
 docker run --name mysql -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root --restart unless-stopped -v mysql:/var/lib/mysql mysql:8
 
 Рассмотрим, что мы делаем этой командой:
