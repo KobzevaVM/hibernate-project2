@@ -1,5 +1,5 @@
 # hibernate-project2
-
+Все запуски можно делать через PowerShell (для Windows).<br>
 Запустить MySQL сервер как докер-контейнер.<br>
 ```docker run --name mysql -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root --restart unless-stopped -v mysql:/var/lib/mysql mysql:8```<br>
 
@@ -21,4 +21,5 @@
 
 Развернуть дамп (скачать можно из репозитория).
 
-Запустить Redis сервер как докер-контейнер.
+Запустить Redis сервер как докер-контейнер.<br>
+```docker run -d --name redis -p 6379:6379 redis:latest```
