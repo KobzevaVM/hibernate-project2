@@ -1,4 +1,4 @@
-# hibernate-project2
+# Hibernate финальный проект 4 модуля
 Все запуски можно делать через PowerShell (для Windows).<br>
 Запустить MySQL сервер как докер-контейнер.<br>
 ```docker run --name mysql -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root --restart unless-stopped -v mysql:/var/lib/mysql mysql:8```<br>
@@ -23,3 +23,11 @@
 
 Запустить Redis сервер как докер-контейнер.<br>
 ```docker run -d --name redis -p 6379:6379 redis:latest```
+
+**В проекте реализовано:**<br>
+Метод получения всех данных из MySQL.<br>
+Метод трансформации данных (в Redis пишутся только те данные, который запрашиваются часто).<br>
+Запись данных в Redis.<br>
+Метод получение данных из Redis.<br>
+Метод получение данных из MySQL.<br>
+Сравнение скорости получения одних и тех же данных из MySQL и Redis.<br>
